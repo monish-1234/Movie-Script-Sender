@@ -1,7 +1,8 @@
 from pynput.keyboard import Key , Controller
 import time
 
-keyboard = Controller()
+a=input(int("Choose any movie script :- \n 1. Test \n 2. Bee \n 3. Pirates of the Carribean "))
+
 file = open('pirates.txt', 'r') 
 time.sleep(4) 
 while 1: 
