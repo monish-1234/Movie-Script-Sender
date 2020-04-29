@@ -1,8 +1,9 @@
-from pynput.keyboard import Key , Controller
-import time
+from pynput.keyboard import Key , Controller #Importing "pynput" module for simultaing key press
+import time #Importing "time" module for delay
 
 a= int(input("Choose any movie script :- \n 1. Bee Movie \n 2. Pirates of the Carribean \n 3. Alien Vs Predator \n 4. Wall-E \n 5. Scary Movie \n 6. Titanic \n 7. Test Script \n 8. Custom File \n \n"))
 
+#list of existing movie scripts
 if(a==1):
     file = open('bee.txt', 'r')
 elif (a==2):
@@ -19,7 +20,7 @@ elif (a==7):
     file = open('lorem.txt', 'r') 
 elif (a==8):
     custom=input("Enter .txt file Name and/or Location \n ")
-    file = open(custom, 'r')
+    file = open(custom, 'r') #opening custom file
 
 
 print ("--------------------DISCLAIMER--------------------DISCLAIMER--------------------DISCLAIMER--------------------\n \n \n \t This Script does not stop automatically untill the entire script is finished so , you cannot use your computer untill the script is finished. \n \n Press Ctrl+C / Ctrl+Z in the shell to stop the script. \n \n Do not indulge in any illegal activities using this script \n \n The Developer IS NOT RESPONSIBLE for whatever way you choose to use this \n \n The script will start running in .... \n 14")
