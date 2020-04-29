@@ -1,22 +1,22 @@
 from pynput.keyboard import Key , Controller
 import time
 
-a= int(input("Choose any movie script :- \n 1. Test Script \n 2. Bee Movie \n 3. Pirates of the Carribean \n 4. Alien Vs Predator \n 5. Wall-E \n 6. Scary Movie \n 7. Titanic \n 8. Custom File \n \n"))
+a= int(input("Choose any movie script :- \n 1. Bee Movie \n 2. Pirates of the Carribean \n 3. Alien Vs Predator \n 4. Wall-E \n 5. Scary Movie \n 6. Titanic \n 7. Test Script \n 8. Custom File \n \n"))
 
 if(a==1):
-    file = open('lorem.txt', 'r') 
-elif (a==2):
     file = open('bee.txt', 'r')
-elif (a==3):
+elif (a==2):
     file = open('pirates.txt', 'r')
-elif (a==4):
+elif (a==3):
     file = open('alien.txt', 'r')
-elif (a==5):
+elif (a==4):
     file = open('walle-e.txt', 'r')
-elif (a==6):
+elif (a==5):
     file = open('scarymovie.txt', 'r')
-elif (a==7):
+elif (a==6):
     file = open('titanic.txt', 'r')
+elif (a==7):
+    file = open('lorem.txt', 'r') 
 elif (a==8):
     custom=input("Enter .txt file Name and/or Location \n ")
     file = open(custom, 'r')
