@@ -24,7 +24,7 @@ elif (a==8):
 
 
 print ("--------------------DISCLAIMER--------------------DISCLAIMER--------------------DISCLAIMER--------------------\n \n \n \t This Script does not stop automatically untill the entire script is finished so , you cannot use your computer untill the script is finished. \n \n Press Ctrl+C / Ctrl+Z in the shell to stop the script. \n \n Do not indulge in any illegal activities using this script \n \n The Developer IS NOT RESPONSIBLE for whatever way you choose to use this \n \n The script will start running in .... \n 14")
-time.sleep(2)
+time.sleep(2)#Delay to select the output window.
 print (" \n 12....")
 time.sleep(2)
 print (" \n 10....")
@@ -36,15 +36,15 @@ time.sleep(7)
 keyboard=Controller()
 while 1: 
       
-    char = file.read(1)           
-    if not char:  
+    char = file.read(1) #reading one character
+    if not char: #if cannot read(end of file), stop program.
         break
           
-    print(char)
-    if (char==" "):
-        time.sleep(0.2)
+    print(char) #output each character to python console
+    if (char==" "): #if character empty, delay for 0.2 seconds and send (press enter)
+        time.sleep(0.2) 
         keyboard.press(Key.enter)
-    keyboard.press(char)
+    keyboard.press(char) #Simulate character key press
     keyboard.release(char)
     
   
