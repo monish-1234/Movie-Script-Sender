@@ -44,8 +44,10 @@ while 1:
     if (char==" "): #if character empty, delay for 0.2 seconds and send (press enter)
         time.sleep(0.2) 
         keyboard.press(Key.enter)
-    keyboard.press(char) #Simulate character key press
-    keyboard.release(char)
+    keyboard.press(char) #Simulate character key press - start
+    keyboard.release(char) #Simulate character key press - end
     
   
 file.close() 
+
+#Programmed by https://github.com/monish-1234/
