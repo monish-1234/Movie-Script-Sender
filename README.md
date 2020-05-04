@@ -33,6 +33,6 @@ Test Script (7) consists a few lines of "Lorem Ipsum" for testing purposes
 
 ## Disclaimer
 
-I am not responsible in whatever way this program maybe for used for.
+I am not responsible in whatever way this program maybe used for.
 
 Please use this only for the intended purpose,that is....messing with your friends.
